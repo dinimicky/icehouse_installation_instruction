@@ -10,5 +10,7 @@
 > 6. verify ntp service: 'ntpq -p'  
 
 ### Database Configuration
-> 1. install the mysql: 'sudo apt-get install python-mysqldb mysql-server'
-> 2. configure the [/etc/mysql/my.cnf](my.cnf)
+> 1. install the mysql: 'sudo apt-get install python-mysqldb mysql-server'  
+> 2. configure the [/etc/mysql/my.cnf](my.cnf)  
+> 3. restart mysql service: 'sudo service mysql restart'  
+> 4. mysql security: 'sudo mysql_install_db', 'sudo mysql_secure_installation'  
