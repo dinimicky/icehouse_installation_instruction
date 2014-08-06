@@ -2,5 +2,5 @@
 
 ### Basic Configuration:
 
-> 1. configure the [/etc/network/interfaces]()  
-> 2. configure the [/etc/hosts]
+> 1. configure the [/etc/network/interfaces][interfaces]  
+> 2. configure the [/etc/hosts][hosts]
