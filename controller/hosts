@@ -1,6 +1,16 @@
 127.0.0.1       localhost
-127.0.1.1       controller
+#127.0.1.1      controller
+# controller
+10.0.0.11 controller
 
+# network
+10.0.0.21 network
+
+# compute1
+10.0.0.31 compute1
+
+# compute1
+10.0.0.41 compute2
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
