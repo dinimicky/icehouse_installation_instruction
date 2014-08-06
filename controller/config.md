@@ -32,4 +32,8 @@
 >
 >>     sudo apt-get install linux-image-generic-lts-saucy linux-headers-generic-lts-saucy  
 >
+> + reboot the system:  
+>
+>>     sudo reboot
+>
 >
