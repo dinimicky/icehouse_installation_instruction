@@ -19,3 +19,25 @@
 >  15. choose software to install: OpenSSH Server.  
 >  16. install the GRUB boot loader: select Yes.  
 > 
+
+
+### Passwords
+> | Service name | content |
+> | :----------- | :-----: |
+> | MYSQL_PASS | openstack |
+> | RABBIT_PASS | openstack |
+> | KEYSTONE_DBPASS | openstack |
+> | DEMO_PASS | demo |
+> | ADMIN_PASS | openstack |
+> | GLANCE_DBPASS | openstack |
+> | GLANCE_PASS | openstack |
+> | NOVA_DBPASS | openstack |
+> | NOVA_PASS | openstack |
+> | DASH_DBPASS | N/A |
+> | CINDER_DBPASS | openstack |
+> | CINDER_PASS | openstack |
+> | NEUTRON_DBPASS | openstack |
+> | NEUTRON_PASS | openstack |
+> | SWIFT_DBPASS | openstack |
+> | SWIFT_PASS | openstack |
+
