@@ -18,7 +18,9 @@
 
 ### Openstack Configuration
 
-> 1. Install the Ubuntu Cloud Archive for Icehouse:  
->>     sudo apt-get install python-software-properties
->>     sudo add-apt-repository cloud-archive:icehouse
+> 1. Install the Ubuntu Cloud Archive for Icehouse:     
+
+>>     sudo apt-get install python-software-properties   
+>>     sudo add-apt-repository cloud-archive:icehouse   
+
 > 2. 
