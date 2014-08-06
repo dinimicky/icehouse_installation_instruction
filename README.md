@@ -47,4 +47,7 @@ icehouse_installation_instruction
 >
 
 ### Network
->
+
+> Management Network: 10.0.0.0/24  
+> instance tunnels: 10.0.1.0/24  
+> internet: dhcp, provided by the VirtualBox   
