@@ -40,6 +40,10 @@
 ### Message Server Configuration
 
 > + Install rabbitmq:
->
+> 
 >>     sudo apt-get install rabbitmq-server
 >
+> + set the passworkd of the rabbitmq user 'guest'
+>  
+>>     sudo rabbitmqctl change_password guest openstack
+> 
