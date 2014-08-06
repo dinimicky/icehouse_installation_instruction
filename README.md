@@ -1,6 +1,8 @@
 icehouse_installation_instruction
 =================================
 
+### Pre-assumption:
+
 > the icehouse installation instuction will be based on:
 > 
 > 1. VirtualBox
@@ -13,7 +15,9 @@ icehouse_installation_instruction
 > 3. compute1
 > 4. compute2
 >
-> the each configuration of the 4 VMs in VirtualBox.
+
+### VM Configuration
+
 > 
 > + controller:
 >   + CPU: 1 
@@ -40,4 +44,7 @@ icehouse_installation_instruction
 >      + NIC 1(host-only): Management Network
 >      + NIC 2(internal network): instance tunnels
 >      + NIC 3(NAT): internet
+>
+
+### Network
 >
