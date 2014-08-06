@@ -36,4 +36,10 @@
 >
 >>     sudo reboot
 >
+
+### Message Server Configuration
+
+> + Install rabbitmq:
+>
+>>     sudo apt-get install rabbitmq-server
 >
