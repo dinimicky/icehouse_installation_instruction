@@ -21,7 +21,7 @@ icehouse_installation_instruction
 > 
 > + controller:
 >   + CPU: 1 
->   + Mem: 1024MB
+>   + Mem: 2048MB
 >   + Disk: 2 vdi disks, each size=100GB
 >   + Network: 2 NICs
 >      + NIC 1(host-only): Management Network
