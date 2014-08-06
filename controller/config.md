@@ -27,4 +27,9 @@
 >
 >>     sudo apt-get update  
 >>     sudo apt-get dist-upgrade  
+> 
+> + install the stability backported linux kernel:
+>
+>>     sudo apt-get install linux-image-generic-lts-saucy linux-headers-generic-lts-saucy  
+>
 >
