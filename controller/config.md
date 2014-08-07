@@ -54,6 +54,7 @@
 > + configure the [/etc/keystone/keystone.conf](keystone.conf)  
 > + Delete the keystone.db file created in the /var/lib/keystone/ directory so that it does not get used by mistake:  
 >
->>     sudo rm /var/lib/keystone/keystone.db
+>      `sudo rm /var/lib/keystone/keystone.db`
 >
+> + Use the password that you set previously to log in as root. Create a keystone database user:
 >
