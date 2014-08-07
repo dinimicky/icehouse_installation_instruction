@@ -124,6 +124,7 @@
 >      `GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' IDENTIFIED BY 'openstack';`  
 >      `GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' IDENTIFIED BY 'openstack';`  
 >      `exit`  
->
+> + Create the database tables for the Image Service: `sudo glance-manage db_sync`  
+> 
 
 
