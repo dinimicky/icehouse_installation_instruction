@@ -53,3 +53,7 @@ icehouse_installation_instruction
 >
 > instance tunnels: 10.0.1.0/24  
 > internet: dhcp, provided by the VirtualBox   
+
+### Openstack command-line clients
+> You can get the relate information in [Chapter 4. Install and configure the OpenStack clients](http://docs.openstack.org/icehouse/install-guide/install/apt/content/ch_clients.html)  
+> 
