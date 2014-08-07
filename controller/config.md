@@ -117,6 +117,13 @@
 > + Install the Image Service: `sudo apt-get install glance python-glanceclient`  
 > + configure database connection & message broker in [/etc/glance/glance-api.conf](glance-api.conf)  
 > + configure database connection in [/etc/glance/glance-registry.conf](glance-registry.conf)  
-> + Delete the glance.sqlite file created in the /var/lib/glance/ directory: `sudo rm /var/lib/glance/glance.sqlite`  
-> + 
+> + Delete the glance.sqlite file created in the /var/lib/glance/ directory if it exists: `sudo rm /var/lib/glance/glance.sqlite`  
+> + create a glance database user:  
+>      `mysql -u root -p`  
+>      `CREATE DATABASE glance;`  
+>      `GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' IDENTIFIED BY 'openstack';`  
+>      `GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' IDENTIFIED BY 'openstack';`  
+>      `exit`  
+>
+
 
