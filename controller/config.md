@@ -47,3 +47,8 @@
 >  
 >>     sudo rabbitmqctl change_password guest openstack
 > 
+
+### Identity Service configuration
+
+> + install keystone: sudo apt-get install keystone  
+> + configure the 
