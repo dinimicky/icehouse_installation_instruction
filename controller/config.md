@@ -100,3 +100,14 @@
 >      `keystone tenant-create --name=demo --description="demo Tenant"`  
 >      `keystone user-role-add --user=demo --role=_member_ --tenant=demo`  
 >
+
+### Define services and API endpoints
+> + keystone service-create. Describes the service.  
+> + keystone endpoint-create. Associates API endpoints with the service.  
+>      `keystone service-create --name=keystone --type=identity \`  
+>      `--description="OpenStack Identity"`  
+>      `keystone endpoint-create \`  
+>      `--service-id=$(keystone service-list | awk '/ identity / {print $2}') \`  
+>      `--publicurl=http://controller:5000/v2.0 \`  
+>      `--internalurl=http://controller:5000/v2.0 \`  
+>      `--adminurl=http://controller:35357/v2.0`  
