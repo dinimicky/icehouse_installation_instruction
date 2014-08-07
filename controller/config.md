@@ -115,5 +115,7 @@
 
 ### Image Service Configuration
 > + Install the Image Service: `sudo apt-get install glance python-glanceclient`  
->  
+> + configure database connection & message broker in [/etc/glance/glance-api.conf](glance-api.conf)  
+> + configure database connection in [/etc/glance/glance-registry.conf](glance-registry.conf)  
+>
 
