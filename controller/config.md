@@ -86,3 +86,7 @@
 >    `sudo sh -c  "(crontab -l -u keystone 2>&1 | grep -q token_flush) || echo '@hourly /usr/bin/keystone-manage token_flush >/var/log/keystone/keystone-tokenflush.log 2>&1' >> /var/spool/cron/crontabs/keystone"`  
 >
 
+### Define users, tenants and roles
+> + set the OS_SERVICE_TOKEN & OS_SERVICE_ENDPOINT environment variable.
+>      `export OS_SERVICE_TOKEN=ADMIN_TOKEN`  
+>      `export OS_SERVICE_ENDPOINT=http://controller:35357/v2.0`
