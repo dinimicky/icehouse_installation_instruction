@@ -76,3 +76,13 @@
 >      `[DEFAULT]`  
 >      `# A "shared secret" between keystone and other openstack services`  
 >      `admin_token = ADMIN_TOKEN`  
+> + Configure the log directory. Edit the [/etc/keystone/keystone.conf](keystone.conf) file and update the [DEFAULT] section:  
+>      `[DEFAULT]`  
+>      `...`  
+>      `log_dir = /var/log/keystone`  
+> + Restart the Identity Service: `sudo service keystone restart`  
+> + By default, the Identity Service stores expired tokens in the database indefinitely. While potentially useful for auditing in production environments, the accumulation of expired tokens will considerably increase database size and may decrease service performance, particularly in test environments with limited resources. We recommend configuring a periodic task using cron to purge expired tokens hourly.  
+>    + Run the following command to purge expired tokens every hour and log the output to /var/log/keystone/keystone-tokenflush.log:  
+>    `# (crontab -l -u keystone 2>&1 | grep -q token_flush) || echo '@hourly /usr/bin/keystone-manage token_flush >/var/log/keystone/keystone-tokenflush.log 2>&1' >> /var/spool/cron/crontabs/keystone`  
+>
+
