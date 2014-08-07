@@ -56,7 +56,7 @@
 >
 >      `sudo rm /var/lib/keystone/keystone.db`
 >
-> + Use the password that you set previously to log in as root. Create a keystone database user:
+> + Use the password that you set previously to log in as root. Create a keystone database user:  
 >      `mysql -u root -p`  
 >      `CREATE DATABASE keystone;`  
 >      `GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY 'openstack';`  
