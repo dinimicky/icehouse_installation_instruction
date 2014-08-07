@@ -111,3 +111,9 @@
 >      `--publicurl=http://controller:5000/v2.0 \`  
 >      `--internalurl=http://controller:5000/v2.0 \`  
 >      `--adminurl=http://controller:35357/v2.0`  
+>  
+
+### Image Service Configuration
+> + Install the Image Service: `sudo apt-get install glance python-glanceclient`  
+>  
+
