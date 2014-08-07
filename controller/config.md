@@ -50,7 +50,7 @@
 
 ### Identity Service configuration
 
-> + install keystone: sudo apt-get install keystone  
+> + install keystone: `sudo apt-get install keystone`  
 > + Specify the location of the database in the configuration file [/etc/keystone/keystone.conf](keystone.conf)  
 >      `[database]`   
 >      `# The SQLAlchemy connection string used to connect to the database`  
