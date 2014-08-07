@@ -51,4 +51,9 @@
 ### Identity Service configuration
 
 > + install keystone: sudo apt-get install keystone  
-> + configure the 
+> + configure the [/etc/keystone/keystone.conf](keystone.conf)  
+> + Delete the keystone.db file created in the /var/lib/keystone/ directory so that it does not get used by mistake:  
+>
+>>     sudo rm /var/lib/keystone/keystone.db
+>
+>
