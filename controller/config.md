@@ -20,32 +20,32 @@
 
 > + Install the Ubuntu Cloud Archive for Icehouse:
 >
->>     sudo apt-get install python-software-properties  
->>     sudo add-apt-repository cloud-archive:icehouse  
+>     `sudo apt-get install python-software-properties`  
+>     `sudo add-apt-repository cloud-archive:icehouse`    
 >
 > + Update the package database and upgrade your system:
 >
->>     sudo apt-get update  
->>     sudo apt-get dist-upgrade  
+>      `sudo apt-get update`  
+>      `sudo apt-get dist-upgrade`  
 > 
 > + install the stability backported linux kernel:
 >
->>     sudo apt-get install linux-image-generic-lts-saucy linux-headers-generic-lts-saucy  
+>      `sudo apt-get install linux-image-generic-lts-saucy linux-headers-generic-lts-saucy`  
 >
 > + reboot the system:  
 >
->>     sudo reboot
+>      `sudo reboot`  
 >
 
 ### Message Server Configuration
 
 > + Install rabbitmq:
 > 
->>     sudo apt-get install rabbitmq-server
+>      `sudo apt-get install rabbitmq-server`  
 >
 > + set the passworkd of the rabbitmq user 'guest'
 >  
->>     sudo rabbitmqctl change_password guest openstack
+>      `sudo rabbitmqctl change_password guest openstack`
 > 
 
 ### Identity Service configuration
