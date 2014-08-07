@@ -63,4 +63,6 @@
 >      `GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY 'openstack';`  
 >      `exit`  
 >
+> + Create the database tables for the Identity Service:  
+>      `sudo keystone-manage db_sync`  
 >
