@@ -66,3 +66,9 @@
 > + Create the database tables for the Identity Service:  
 >      `sudo keystone-manage db_sync`  
 >
+> + Define an authorization token to use as a shared secret between the Identity Service and other OpenStack services. Use openssl to generate a random token and store it in the configuration file:  
+>      `openssl rand -hex 10`  
+> Edit [/etc/keystone/keystone.conf](keystone.conf) and change the [DEFAULT] section, replacing ADMIN_TOKEN with the results of the command:  
+>      `[DEFAULT]`  
+>      `# A "shared secret" between keystone and other openstack services`  
+>      `admin_token = ADMIN_TOKEN`  
