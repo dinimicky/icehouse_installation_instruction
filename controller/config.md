@@ -125,6 +125,18 @@
 >      `GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' IDENTIFIED BY 'openstack';`  
 >      `exit`  
 > + Create the database tables for the Image Service: `sudo glance-manage db_sync`  
-> 
+> + Create a glance user that the Image Service can use to authenticate with the Identity service.  
+>      `keystone user-create --name=glance --pass=GLANCE_PASS --email=glance@example.com`
+>      `keystone user-role-add --user=glance --tenant=service --role=admin`  
+> + Configure the Image Service to use the Identity Service for authentication in [/etc/glance/glance-api.conf](glance-api.conf) & [/etc/glance/glance-registry.conf](glance-registry.conf)  
+> + Register the Image Service with the Identity service so that other OpenStack services can locate it.  
+>      `keystone service-create --name=glance --type=image --description="OpenStack Image Service"`  
+>      `keystone endpoint-create \`  
+>      `--service-id=$(keystone service-list | awk '/ image / {print $2}') \`  
+>      `--publicurl=http://controller:9292 \`  
+>      `--internalurl=http://controller:9292 \`  
+>      `--adminurl=http://controller:9292`  
+>
+
 
 
