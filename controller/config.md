@@ -54,7 +54,7 @@
 > + Specify the location of the database in the configuration file [/etc/keystone/keystone.conf](keystone.conf)  
 >      `[database]`   
 >      `# The SQLAlchemy connection string used to connect to the database`  
->      `connection = mysql://keystone:KEYSTONE_DBPASS@controller/keystone`  
+>      `connection = mysql://keystone:openstack@controller/keystone`  
 >
 > + Delete the keystone.db file created in the /var/lib/keystone/ directory so that it does not get used by mistake:  
 >
