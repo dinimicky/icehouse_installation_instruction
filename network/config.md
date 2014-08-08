@@ -50,3 +50,14 @@
 >      `sudo service nova-api restart`  
 
 > + To configure the Modular Layer 2 (ML2) plug-in in [/etc/neutron/plugins/ml2/ml2_conf.ini]
+> + To configure the Open vSwitch (OVS) service:  
+>      `sudo service openvswitch-switch restart`  
+>      `sudo ovs-vsctl add-br br-int`  
+>      `sudo ovs-vsctl add-br br-ex`  
+>      `sudo ovs-vsctl add-port br-ex eth1`  
+>      `sudo service neutron-plugin-openvswitch-agent restart`  
+>      `sudo service neutron-l3-agent restart`  
+>      `sudo service neutron-dhcp-agent restart`  
+>      `sudo service neutron-metadata-agent restart`  
+
+
