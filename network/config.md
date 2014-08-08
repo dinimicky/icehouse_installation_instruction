@@ -33,3 +33,7 @@
 >
 >      `sudo reboot`  
 >
+
+### Configure network node
+
+> + 
