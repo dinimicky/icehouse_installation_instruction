@@ -187,5 +187,13 @@
 >      `--publicurl=http://controller:8774/v2/%\(tenant_id\)s \`  
 >      `--internalurl=http://controller:8774/v2/%\(tenant_id\)s \`  
 >      `--adminurl=http://controller:8774/v2/%\(tenant_id\)s`  
+> + Restart Compute services:  
+>      `service nova-api restart`   
+>      `service nova-cert restart`  
+>      `service nova-consoleauth restart`  
+>      `service nova-scheduler restart`  
+>      `service nova-conductor restart`  
+>      `service nova-novncproxy restart`  
 >
+
 
