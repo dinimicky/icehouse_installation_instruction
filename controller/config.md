@@ -165,7 +165,7 @@
 >      `nova-novncproxy nova-scheduler python-novaclient`  
 > + Configure the [/etc/nova/nova.conf](nova.conf)  
 > + Delete the nova.sqlite file created in the /var/lib/nova/ directory  
-> + Use the password you created previously to log in as root. Create a nova database user:
+> + Use the password you created previously to log in as root. Create a nova database user:  
 >      `mysql -u root -p`  
 >      `CREATE DATABASE nova;`  
 >      `GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost' \`  
