@@ -175,6 +175,9 @@
 >      `exit`  
 > + Create the Compute service tables:  
 >      `sudo nova-manage db sync`  
->
-
+> + Create a nova user that Compute uses to authenticate with the Identity Service. Use the service tenant and give the user the admin role:  
+>      `keystone user-create --name=nova --pass=openstack --email=nova@example.com`  
+>      `keystone user-role-add --user=nova --tenant=service --role=admin`  
+> + Configure Compute to use these credentials with the Identity Service running on the controller in [/etc/nova/nova.conf](nova.conf).  
+> 
 
