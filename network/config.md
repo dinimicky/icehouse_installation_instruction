@@ -45,5 +45,6 @@
 >> + Note: Ubuntu installations using Linux kernel version 3.11 or newer do not require the openvswitch-datapath-dkms package.  
 
 > + To configure the DHCP agent in [/etc/neutron/dhcp_agent.ini](dhcp_agent.ini)  
+> + To configure the metadata agent in [ /etc/neutron/metadata_agent.ini](metadata_agent.ini)  
 
 
