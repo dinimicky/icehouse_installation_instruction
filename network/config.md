@@ -39,4 +39,5 @@
 > + Configure [/etc/sysctl.conf](sysctl.conf) and implement the changes: 
 >      `sudo sysctl -p`  
 > + To install the Networking components  
->      `apt-get install neutron-plugin-ml2 neutron-plugin-openvswitch-agent openvswitch-datapath-dkms neutron-l3-agent neutron-dhcp-agent`  
+>      `sudo apt-get install neutron-plugin-ml2 neutron-plugin-openvswitch-agent \`  
+>      `openvswitch-datapath-dkms neutron-l3-agent neutron-dhcp-agent`  
