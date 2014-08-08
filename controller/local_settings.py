@@ -7,6 +7,18 @@ from openstack_dashboard import exceptions
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
+SESSION_ENGINE = 'django.core.cache.backends.db.DatabaseCache'
+DATABASES = {
+'default': {
+# Database configuration here
+'ENGINE': 'django.db.backends.mysql',
+'NAME': 'dash',
+'USER': 'dash',
+'PASSWORD': 'openstack',
+'HOST': 'controller',
+'default-character-set': 'utf8'
+}
+}
 # Required for Django 1.5.
 # If horizon is running in production (DEBUG is False), set this
 # with the list of host/domain names that the application can serve.
