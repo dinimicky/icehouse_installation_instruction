@@ -237,5 +237,10 @@
 >     `sudo service apache2 restart`  
 >     `sudo service memcached restart`  
 > + Initialize and configure the database  
-
+>     `mysql -u root -p`  
+>     `CREATE DATABASE dash;`  
+>     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'%' IDENTIFIED BY 'DASH_DBPASS';`  
+>     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'localhost' IDENTIFIED BY 'DASH_DBPASS';`   
+>     `exit`
+>
 
