@@ -164,6 +164,7 @@
 >      `sudo apt-get install nova-api nova-cert nova-conductor nova-consoleauth \`  
 >      `nova-novncproxy nova-scheduler python-novaclient`  
 > + Configure the [/etc/nova/nova.conf](nova.conf)  
+> + Delete the nova.sqlite file created in the /var/lib/nova/ directory  
 >
 
 
