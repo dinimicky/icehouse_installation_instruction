@@ -36,4 +36,5 @@
 
 ### Configure network node
 
-> + 
+> + Configure [/etc/sysctl.conf](sysctl.conf)
+> 
