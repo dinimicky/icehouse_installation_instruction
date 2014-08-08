@@ -239,8 +239,8 @@
 > + Initialize and configure the database  
 >     `mysql -u root -p`  
 >     `CREATE DATABASE dash;`  
->     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'%' IDENTIFIED BY 'DASH_DBPASS';`  
->     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'localhost' IDENTIFIED BY 'DASH_DBPASS';`   
+>     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'%' IDENTIFIED BY 'openstack';`  
+>     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'localhost' IDENTIFIED BY 'openstack';`   
 >     `exit`
 >
 
