@@ -179,5 +179,13 @@
 >      `keystone user-create --name=nova --pass=openstack --email=nova@example.com`  
 >      `keystone user-role-add --user=nova --tenant=service --role=admin`  
 > + Configure Compute to use these credentials with the Identity Service running on the controller in [/etc/nova/nova.conf](nova.conf).  
-> 
+> + Register the service and specify the endpoint:  
+>      `keystone service-create --name=nova --type=compute \`  
+>      `--description="OpenStack Compute"`  
+>      `keystone endpoint-create \`  
+>      `--service-id=$(keystone service-list | awk '/ compute / {print $2}') \`  
+>      `--publicurl=http://controller:8774/v2/%\(tenant_id\)s \`  
+>      `--internalurl=http://controller:8774/v2/%\(tenant_id\)s \`  
+>      `--adminurl=http://controller:8774/v2/%\(tenant_id\)s`  
+>
 
