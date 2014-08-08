@@ -33,7 +33,7 @@
 > | GLANCE_PASS | openstack |
 > | NOVA_DBPASS | openstack |
 > | NOVA_PASS | openstack |
-> | DASH_DBPASS | N/A |
+> | DASH_DBPASS | openstack |
 > | CINDER_DBPASS | openstack |
 > | CINDER_PASS | openstack |
 > | NEUTRON_DBPASS | openstack |
