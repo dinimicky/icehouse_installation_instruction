@@ -54,7 +54,7 @@
 >      `sudo service openvswitch-switch restart`  
 >      `sudo ovs-vsctl add-br br-int`  
 >      `sudo ovs-vsctl add-br br-ex`  
->      `sudo ovs-vsctl add-port br-ex eth0`  
+>      `sudo ovs-vsctl add-port br-ex eth3`  
 >      `sudo service neutron-plugin-openvswitch-agent restart`  
 >      `sudo service neutron-l3-agent restart`  
 >      `sudo service neutron-dhcp-agent restart`  
