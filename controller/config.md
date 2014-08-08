@@ -154,6 +154,10 @@
 >      `--internalurl=http://controller:9292 \`  
 >      `--adminurl=http://controller:9292`  
 >
+> + Restart the glance service with its new settings:  
+>      `sudo service glance-registry restart`  
+>      `sudo service glance-api restart`  
+>  
 
 
 
