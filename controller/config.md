@@ -242,5 +242,7 @@
 >     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'%' IDENTIFIED BY 'openstack';`  
 >     `GRANT ALL PRIVILEGES ON dash.* TO 'dash'@'localhost' IDENTIFIED BY 'openstack';`   
 >     `exit`
->
+> + add SESSION_ENGINE & DATABASES in [/etc/openstack-dashboard/local_settings.py](local_settings.py)  
+>  
+> 
 
