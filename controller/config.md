@@ -205,7 +205,7 @@
 >     `GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' \`  
 >     `IDENTIFIED BY 'NEUTRON_DBPASS';`  
 >     `exit`  
-> + Create Identity service credentials for Networking:
+> + Create Identity service credentials for Networking:  
 >     `keystone user-create --name neutron --pass openstack --email neutron@example.com`  
 >     `keystone user-role-add --user neutron --tenant service --role admin`  
 >     `keystone service-create --name neutron --type network --description "OpenStack Networking"`  
