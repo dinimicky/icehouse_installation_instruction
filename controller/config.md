@@ -217,5 +217,6 @@
 >   
 > + To install the Networking components:  
 >     `sudo apt-get install neutron-server neutron-plugin-ml2`  
-> + To configure the Networking server component in
+> + To configure the Networking server component in [/etc/neutron/neutron.conf](neutron.conf)  
+> + To configure the Modular Layer 2 (ML2) plug-in in /etc/neutron/plugins/ml2/ml2_conf.ini
 
