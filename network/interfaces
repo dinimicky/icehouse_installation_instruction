@@ -7,16 +7,19 @@ iface lo inet loopback
 
 auto eth0
 iface eth0 inet static
-	address 10.0.0.21
-	network 10.0.0.0
-	netmask 255.255.255.0
+        address 10.0.0.21
+        network 10.0.0.0
+        netmask 255.255.255.0
 
 auto eth1
 iface eth1 inet static
-	address 10.0.1.21
-	network 10.0.1.0
-	netmask 255.255.255.0
+        address 10.0.1.21
+        network 10.0.1.0
+        netmask 255.255.255.0
 
 # The primary network interface
 auto eth2
 iface eth2 inet dhcp
+
+auto eth3
+iface eth3 inet manual
