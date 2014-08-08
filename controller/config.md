@@ -245,17 +245,18 @@
 > + add SESSION_ENGINE & DATABASES in [/etc/openstack-dashboard/local_settings.py](local_settings.py)  
 > + After configuring the local_settings as shown, you can run the manage.py syncdb command to populate this newly created database.   
 >     `sudo /usr/share/openstack-dashboard/manage.py syncdb`  
->>  Note: it will ask you to create a superusers.    
-    You just installed Django's auth system, which means you don't have any superusers defined.
-Would you like to create one now? (yes/no): yes
-Username (leave blank to use 'root'):
-Email address: root@exmaple.com
-Password:openstack
-Password (again): openstack
-Superuser created successfully.
-Installing custom SQL ...
-Installing indexes ...
-Installed 0 object(s) from 0 fixture(s)
+
+>>    Note: it will ask you to create a superusers.    
+     You just installed Django's auth system, which means you don't have any superusers defined.  
+Would you like to create one now? (yes/no): yes  
+Username (leave blank to use 'root'):  
+Email address: root@exmaple.com  
+Password:openstack  
+Password (again): openstack  
+Superuser created successfully.  
+Installing custom SQL ...  
+Installing indexes ...  
+Installed 0 object(s) from 0 fixture(s)  
 
 
 
