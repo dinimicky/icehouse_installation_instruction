@@ -46,5 +46,7 @@
 
 > + To configure the DHCP agent in [/etc/neutron/dhcp_agent.ini](dhcp_agent.ini)  
 > + To configure the metadata agent in [ /etc/neutron/metadata_agent.ini](metadata_agent.ini)  
+> + On the controller node, restart the Compute API service:
+>      `sudo service nova-api restart`  
 
-
+> + To configure the Modular Layer 2 (ML2) plug-in in [/etc/neutron/plugins/ml2/ml2_conf.ini]
