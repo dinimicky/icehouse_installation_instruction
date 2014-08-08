@@ -90,7 +90,7 @@
 > + set the OS_SERVICE_TOKEN & OS_SERVICE_ENDPOINT environment variable.  
 >      `export OS_SERVICE_TOKEN=ADMIN_TOKEN`  
 >      `export OS_SERVICE_ENDPOINT=http://controller:35357/v2.0`  
-> + create administrative user & normal user  
+> + create administrative user & normal user & service tenant:  
 >      `keystone user-create --name=admin --pass=openstack --email=admin@example.com`  
 >      `keystone role-create --name=admin`  
 >      `keystone tenant-create --name=admin --description="Admin Tenant"`  
@@ -99,6 +99,7 @@
 >      `keystone user-create --name=demo --pass=demo --email=demo@example.com`  
 >      `keystone tenant-create --name=demo --description="demo Tenant"`  
 >      `keystone user-role-add --user=demo --role=_member_ --tenant=demo`  
+>      `keystone tenant-create --name=service --description="Service Tenant"`
 >
 
 ### Define services and API endpoints
