@@ -163,6 +163,7 @@
 > + Install the Compute packages necessary for the controller node.  
 >      `sudo apt-get install nova-api nova-cert nova-conductor nova-consoleauth \`  
 >      `nova-novncproxy nova-scheduler python-novaclient`  
+> + Configure the [/etc/nova/nova.conf](nova.conf)  
 >
 
 
