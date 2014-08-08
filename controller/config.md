@@ -188,12 +188,12 @@
 >      `--internalurl=http://controller:8774/v2/%\(tenant_id\)s \`  
 >      `--adminurl=http://controller:8774/v2/%\(tenant_id\)s`  
 > + Restart Compute services:  
->      `service nova-api restart`   
->      `service nova-cert restart`  
->      `service nova-consoleauth restart`  
->      `service nova-scheduler restart`  
->      `service nova-conductor restart`  
->      `service nova-novncproxy restart`  
+>      `sudo service nova-api restart`   
+>      `sudo service nova-cert restart`  
+>      `sudo service nova-consoleauth restart`  
+>      `sudo service nova-scheduler restart`  
+>      `sudo service nova-conductor restart`  
+>      `sudo service nova-novncproxy restart`  
 >
 
 
