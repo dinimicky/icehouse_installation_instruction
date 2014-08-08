@@ -215,5 +215,7 @@
 >     `--adminurl http://controller:9696 \`  
 >     `--internalurl http://controller:9696`   
 >   
+> + To install the Networking components:  
+>     `sudo apt-get install neutron-server neutron-plugin-ml2`  
 >
 
