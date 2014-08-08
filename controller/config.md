@@ -173,6 +173,8 @@
 >      `GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' \`  
 >      `IDENTIFIED BY 'openstack';`  
 >      `exit`  
+> + Create the Compute service tables:  
+>      `sudo nova-manage db sync`  
 >
 
 
