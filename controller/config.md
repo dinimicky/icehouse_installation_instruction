@@ -233,6 +233,9 @@
 > + Remove the openstack-dashboard-ubuntu-theme package. This theme prevents translations, several menus as well as the network map from rendering correctly:  
 >     `sudo apt-get remove --purge openstack-dashboard-ubuntu-theme`  
 > + Modify the value of CACHES['default']['LOCATION'] in [/etc/openstack-dashboard/local_settings.py](local_settings.py) to match the ones set in /etc/memcached.conf.  
-> 
+> + Start the Apache web server and memcached:  
+>     `sudo service apache2 restart`  
+>     `sudo service memcached restart`  
+>
 
 
