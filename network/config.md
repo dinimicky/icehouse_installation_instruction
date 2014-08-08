@@ -41,3 +41,7 @@
 > + To install the Networking components  
 >      `sudo apt-get install neutron-plugin-ml2 neutron-plugin-openvswitch-agent \`  
 >      `openvswitch-datapath-dkms neutron-l3-agent neutron-dhcp-agent`  
+
+>> + Note: Ubuntu installations using Linux kernel version 3.11 or newer do not require the openvswitch-datapath-dkms package.  
+
+> 
