@@ -196,4 +196,12 @@
 >      `sudo service nova-novncproxy restart`  
 >
 
-
+### Install Network controller services
+> + create the neutron database:  
+>     `mysql -u root -p`  
+>     `CREATE DATABASE neutron;`  
+>     `GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' \`  
+>     `IDENTIFIED BY 'NEUTRON_DBPASS';`  
+>     `GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' \`  
+>     `IDENTIFIED BY 'NEUTRON_DBPASS';`  
+>
