@@ -114,6 +114,22 @@
 >      `--adminurl=http://controller:35357/v2.0`  
 >  
 
+### Create openrc.sh files
+> + admin-openrc.sh for the administrative user:  
+>      `export OS_USERNAME=admin`  
+>      `export OS_PASSWORD=openstack`  
+>      `export OS_TENANT_NAME=admin`  
+>      `export OS_AUTH_URL=http://controller:35357/v2.0`  
+>      `export PS1='[\u@\h \W(admin)]\$ '`  
+> + demo-openrc.sh for the normal user:  
+>      `export OS_USERNAME=demo`  
+>      `export OS_PASSWORD=demo`  
+>      `export OS_TENANT_NAME=demo`  
+>      `export OS_AUTH_URL=http://controller:35357/v2.0`  
+>      `export PS1='[\u@\h \W(keystone_demo)]\$ '`  
+>
+>
+
 ### Image Service Configuration
 > + Install the Image Service: `sudo apt-get install glance python-glanceclient`  
 > + configure database connection & message broker in [/etc/glance/glance-api.conf](glance-api.conf)  
