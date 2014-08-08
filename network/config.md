@@ -8,3 +8,8 @@
 > 4. configure the [/etc/ntp.conf](ntp.conf)  
 > 5. restart ntp service: 'sudo service ntp restart'  
 > 6. verify ntp service: 'ntpq -p'  
+
+### Database Client Configuration
+
+> 1. install the mysql: 'sudo apt-get install python-mysqldb'  
+
