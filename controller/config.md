@@ -126,7 +126,7 @@
 >      `export OS_PASSWORD=demo`  
 >      `export OS_TENANT_NAME=demo`  
 >      `export OS_AUTH_URL=http://controller:35357/v2.0`  
->      `export PS1='[\u@\h \W(keystone_demo)]\$ '`  
+>      `export PS1='[\u@\h \W(demo)]\$ '`  
 >
 >
 
