@@ -236,6 +236,6 @@
 > + Start the Apache web server and memcached:  
 >     `sudo service apache2 restart`  
 >     `sudo service memcached restart`  
->
+> + Initialize and configure the database  
 
 
