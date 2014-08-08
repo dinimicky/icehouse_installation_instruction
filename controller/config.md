@@ -161,7 +161,7 @@
 
 ### Install Compute controller services
 > + Install the Compute packages necessary for the controller node.  
->      `apt-get install nova-api nova-cert nova-conductor nova-consoleauth \`  
+>      `sudo apt-get install nova-api nova-cert nova-conductor nova-consoleauth \`  
 >      `nova-novncproxy nova-scheduler python-novaclient`  
 >
 
