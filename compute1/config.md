@@ -83,3 +83,12 @@
 >      `sudo service neutron-plugin-openvswitch-agent restart`  
 >
 
+### Configure the Block Storage Service  
+
+> + Create the LVM physical and logical volumes. This guide assumes a second disk /dev/sdc that is used for this purpose:  
+>      `sudo pvcreate /dev/sdc`  
+>      `sudo vgcreate cinder-volumes /dev/sdc`  
+> + After you configure the operating system, install the appropriate packages for the Block Storage service:  
+>      `sudo apt-get install cinder-volume`  
+> + add keystone_authtoken in /etc/cinder/cinder.conf  
+> 
