@@ -50,6 +50,6 @@
 >>>    `dpkg-statoverride --update --add root root 0644 /boot/vmlinuz-${version}`  
 
 
->> + make the file executable: 
+>> + make the file executable:  
 >>     `chmod +x /etc/kernel/postinst.d/statoverride`  
 
