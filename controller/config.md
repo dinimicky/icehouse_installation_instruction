@@ -260,9 +260,9 @@ Installed 0 object(s) from 0 fixture(s)
 
 > + On Ubuntu: If you want to avoid a warning when you restart apache2, create a blackhole directory in the dashboard directory, as follows:  
 >     `sudo mkdir -p /var/lib/dash/.blackhole`  
-> + Restart Apache to pick up the default site and symbolic link settings:
+> + Restart Apache to pick up the default site and symbolic link settings:  
 >     `sudo service apache2 restart`  
-> + On Ubuntu, restart the nova-api service to ensure that the API server can connect to the dashboard without error:
+> + On Ubuntu, restart the nova-api service to ensure that the API server can connect to the dashboard without error:  
 >     `sudo service nova-api restart`  
 
 ### Configure a Block Storage service  
