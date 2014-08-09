@@ -34,7 +34,7 @@
 >      `sudo reboot`  
 >
 
-### Configure network node
+### Configure network service
 
 > + Configure [/etc/sysctl.conf](sysctl.conf) and implement the changes: 
 >      `sudo sysctl -p`  
