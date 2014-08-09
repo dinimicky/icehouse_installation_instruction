@@ -76,3 +76,5 @@
 >      `sudo service openvswitch-switch restart`  
 > + Add the integration bridge:  
 >      `sudo ovs-vsctl add-br br-int`  
+> + To configure Compute to use Networking in [/etc/nova/nova.conf](nova.conf)  
+> 
