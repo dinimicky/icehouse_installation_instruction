@@ -83,3 +83,17 @@
 >      `sudo service neutron-plugin-openvswitch-agent restart`  
 >
 
+### Configure the Block Storage Service  
+
+> + Create the LVM physical and logical volumes. This guide assumes a second disk /dev/sdc that is used for this purpose:  
+>      `sudo pvcreate /dev/sdc`  
+>      `sudo vgcreate cinder-volumes /dev/sdc`  
+> + After you configure the operating system, install the appropriate packages for the Block Storage service:  
+>      `sudo apt-get install cinder-volume`  
+> + add keystone_authtoken in [/etc/cinder/cinder.conf](cinder.conf)  
+> + Configure Block Storage to use the RabbitMQ message broker in [/etc/cinder/cinder.conf](cinder.conf)  
+> + Configure Block Storage to use your MySQL database in [/etc/cinder/cinder.conf](cinder.conf)  
+> + Configure Block Storage to use the Image Service in [/etc/cinder/cinder.conf](cinder.conf)  
+> + Restart the Block Storage services with the new settings:  
+>      `sudo service cinder-volume restart`  
+>      `sudo service tgt restart`  
