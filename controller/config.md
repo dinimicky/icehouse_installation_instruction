@@ -297,4 +297,6 @@ Installed 0 object(s) from 0 fixture(s)
 >      `--publicurl=http://controller:8776/v2/%\(tenant_id\)s \`  
 >      `--internalurl=http://controller:8776/v2/%\(tenant_id\)s \`  
 >      `--adminurl=http://controller:8776/v2/%\(tenant_id\)s`  
->
+> + Restart the Block Storage services with the new settings:  
+>      `sudo service cinder-scheduler restart`  
+>      `sudo service cinder-api restart`  
