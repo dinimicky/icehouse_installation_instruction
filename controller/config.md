@@ -300,3 +300,11 @@ Installed 0 object(s) from 0 fixture(s)
 > + Restart the Block Storage services with the new settings:  
 >      `sudo service cinder-scheduler restart`  
 >      `sudo service cinder-api restart`  
+
+### Configure an Object Storage node  
+
+> + Create a swift user that the Object Storage Service can use to authenticate with the Identity Service.  
+> + Create a service entry for the Object Storage Service:  
+> + Specify an API endpoint for the Object Storage Service by using the returned service ID.  
+> + Create the configuration directory  
+> + Create /etc/swift/swift.conf  
