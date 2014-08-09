@@ -270,6 +270,12 @@ Installed 0 object(s) from 0 fixture(s)
 > + Install the appropriate packages for the Block Storage service:  
 >     `sudo apt-get install cinder-api cinder-scheduler`  
 > + Configure Block Storage to use your database in [/etc/cinder/cinder.conf](cinder.conf)  
+> + create a cinder database:  
+>     `mysql -u root -p`  
+>     `CREATE DATABASE cinder;`  
+>     `GRANT ALL PRIVILEGES ON cinder.* TO 'cinder'@'localhost' IDENTIFIED BY 'openstack';`  
+>     `GRANT ALL PRIVILEGES ON cinder.* TO 'cinder'@'%' IDENTIFIED BY 'openstack';`  
+>     `exit`  
 
 
 
