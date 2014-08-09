@@ -72,3 +72,7 @@
 >      `sudo apt-get install neutron-common neutron-plugin-ml2 neutron-plugin-openvswitch-agent `  
 > + Configure the [/etc/neutron/neutron.conf](neutron.conf)     
 > + To configure the Modular Layer 2 (ML2) plug-in in [/etc/neutron/plugins/ml2/ml2_conf.ini](ml2_conf.ini)  
+> +     Restart the OVS service:  
+>      `sudo service openvswitch-switch restart`  
+> + Add the integration bridge:  
+>      `sudo ovs-vsctl add-br br-int`  
