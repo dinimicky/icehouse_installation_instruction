@@ -276,6 +276,10 @@ Installed 0 object(s) from 0 fixture(s)
 >     `GRANT ALL PRIVILEGES ON cinder.* TO 'cinder'@'localhost' IDENTIFIED BY 'openstack';`  
 >     `GRANT ALL PRIVILEGES ON cinder.* TO 'cinder'@'%' IDENTIFIED BY 'openstack';`  
 >     `exit`  
-
-
-
+> + Create the database tables for the Block Storage service:  
+>      `sudo cinder-manage db sync`  
+> + Create a cinder user:  
+>      `keystone user-create --name=cinder --pass=openstack --email=cinder@example.com`  
+>      `keystone user-role-add --user=cinder --tenant=service --role=admin`  
+> + add keystone_token section in [/etc/cinder/cinder.conf](cinder.conf)  
+> + configure the RabbitMQ message broker in [/etc/cinder/cinder.conf](cinder.conf)  
