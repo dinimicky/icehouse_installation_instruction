@@ -54,5 +54,7 @@
 >>     `chmod +x /etc/kernel/postinst.d/statoverride`  
 
 > + Config the [/etc/nova/nova.conf](nova.conf)  
-> 
->
+> + Edit the [libvirt] section in the /etc/nova/nova-compute.conf file to modify this key because we use the virtualbox:
+
+>>     `[libvirt]`  
+>>     `virt_type = qemu`  
