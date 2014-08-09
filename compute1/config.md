@@ -64,3 +64,5 @@
 
 > + Restart the Compute service:  
 >      `sudo service nova-compute restart`  
+
+### Configure the Network service  
