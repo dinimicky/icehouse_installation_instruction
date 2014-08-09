@@ -283,3 +283,11 @@ Installed 0 object(s) from 0 fixture(s)
 >      `keystone user-role-add --user=cinder --tenant=service --role=admin`  
 > + add keystone_token section in [/etc/cinder/cinder.conf](cinder.conf)  
 > + configure the RabbitMQ message broker in [/etc/cinder/cinder.conf](cinder.conf)  
+> + Register the Block Storage service with the Identity service so that other OpenStack services can locate it:
+>      `keystone service-create --name=cinder --type=volume --description="OpenStack Block Storage"`  
+>      `keystone endpoint-create \`  
+>      `--service-id=$(keystone service-list | awk '/ volume / {print $2}') \`  
+>      `--publicurl=http://controller:8776/v1/%\(tenant_id\)s \`  
+>      `--internalurl=http://controller:8776/v1/%\(tenant_id\)s \`  
+>      `--adminurl=http://controller:8776/v1/%\(tenant_id\)s`  
+
