@@ -53,3 +53,6 @@
 >> + make the file executable:  
 >>     `chmod +x /etc/kernel/postinst.d/statoverride`  
 
+> + Config the [/etc/nova/nova.conf](nova.conf)  
+> 
+>
