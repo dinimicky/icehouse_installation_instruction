@@ -201,9 +201,9 @@
 >     `mysql -u root -p`  
 >     `CREATE DATABASE neutron;`  
 >     `GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' \`  
->     `IDENTIFIED BY 'NEUTRON_DBPASS';`  
+>     `IDENTIFIED BY 'openstack';`  
 >     `GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' \`  
->     `IDENTIFIED BY 'NEUTRON_DBPASS';`  
+>     `IDENTIFIED BY 'openstack';`  
 >     `exit`  
 > + Create Identity service credentials for Networking:  
 >     `keystone user-create --name neutron --pass openstack --email neutron@example.com`  
