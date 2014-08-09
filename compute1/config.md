@@ -70,4 +70,4 @@
 >      `sudo sysctl -p`  
 > + To install the Networking components  
 >      `sudo apt-get install neutron-common neutron-plugin-ml2 neutron-plugin-openvswitch-agent `  
->      
+> + Configure the [/etc/neutron/neutron.conf](neutron.conf)     
