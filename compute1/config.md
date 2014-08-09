@@ -77,4 +77,9 @@
 > + Add the integration bridge:  
 >      `sudo ovs-vsctl add-br br-int`  
 > + To configure Compute to use Networking in [/etc/nova/nova.conf](nova.conf)  
-> 
+> + Restart the Compute service:  
+>      `sudo service nova-compute restart`  
+> + Restart the Open vSwitch (OVS) agent:  
+>      `sudo service neutron-plugin-openvswitch-agent restart`  
+>
+
