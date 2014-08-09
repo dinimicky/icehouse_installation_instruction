@@ -43,7 +43,7 @@
 >      `openvswitch-datapath-dkms neutron-l3-agent neutron-dhcp-agent`  
 
 >> + Note: Ubuntu installations using Linux kernel version 3.11 or newer do not require the openvswitch-datapath-dkms package.  
-> + To configure the  /etc/neutron/neutron.conf
+> + To configure the [/etc/neutron/neutron.conf](neutron.conf)  
 > + To configure the DHCP agent in [/etc/neutron/dhcp_agent.ini](dhcp_agent.ini)  
 > + To configure the metadata agent in [ /etc/neutron/metadata_agent.ini](metadata_agent.ini)  
 > + On the controller node, restart the Compute API service:
