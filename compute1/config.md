@@ -59,4 +59,8 @@
 >>      [libvirt]  
 >>      virt_type = qemu  
 
->
+> + Remove the SQLite database created by the packages:  
+>      `sudo rm /var/lib/nova/nova.sqlite`  
+
+> + Restart the Compute service:  
+>      `sudo service nova-compute restart`  
