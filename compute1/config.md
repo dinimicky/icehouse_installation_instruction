@@ -43,11 +43,13 @@
 
 >> + To also enable this override for all future kernel updates, create the file /etc/kernel/postinst.d/statoverride containing:  
 
->>>  `#!/bin/sh`  
->>>  `version="$1"`  
->>>  `# passing the kernel version is required`  
->>>  `[ -z "${version}" ] && exit 0`  
->>>  `dpkg-statoverride --update --add root root 0644 /boot/vmlinuz-${version}`  
+>>>    `#!/bin/sh`  
+>>>    `version="$1"`  
+>>>    `# passing the kernel version is required`  
+>>>    `[ -z "${version}" ] && exit 0`  
+>>>    `dpkg-statoverride --update --add root root 0644 /boot/vmlinuz-${version}`  
 
 
->> chmod +x /etc/kernel/postinst.d/statoverride  
+>> + make the file executable: 
+>>     `chmod +x /etc/kernel/postinst.d/statoverride`  
+
