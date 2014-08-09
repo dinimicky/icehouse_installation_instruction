@@ -96,4 +96,4 @@
 > + Configure Block Storage to use the Image Service in [/etc/cinder/cinder.conf](cinder.conf)  
 > + Restart the Block Storage services with the new settings:  
 >      `sudo service cinder-volume restart`  
->      `sudo service tgt restart`
+>      `sudo service tgt restart`  
