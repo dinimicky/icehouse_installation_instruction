@@ -265,6 +265,10 @@ Installed 0 object(s) from 0 fixture(s)
 > + On Ubuntu, restart the nova-api service to ensure that the API server can connect to the dashboard without error:
 >     `sudo service nova-api restart`  
 
+### Configure a Block Storage service  
+
+> + Install the appropriate packages for the Block Storage service:  
+>     `sudo apt-get install cinder-api cinder-scheduler`  
 
 
 
