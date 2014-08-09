@@ -66,3 +66,8 @@
 >      `sudo service nova-compute restart`  
 
 ### Configure the Network service  
+> + Configure [/etc/sysctl.conf](sysctl.conf) and implement the changes: 
+>      `sudo sysctl -p`  
+> + To install the Networking components  
+>      `sudo apt-get install neutron-common neutron-plugin-ml2 neutron-plugin-openvswitch-agent `  
+>      
