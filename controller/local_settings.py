@@ -7,7 +7,7 @@ from openstack_dashboard import exceptions
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-SESSION_ENGINE = 'django.core.cache.backends.db.DatabaseCache'
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 DATABASES = {
 'default': {
 # Database configuration here
