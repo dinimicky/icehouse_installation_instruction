@@ -360,3 +360,32 @@ Installed 0 object(s) from 0 fixture(s)
 >      `sudo swift-ring-builder container.builder add r1z1-10.0.0.11:6001/sdb1 100`  
 >      `sudo swift-ring-builder object.builder add r1z1-10.0.0.11:6000/sdb1 100`  
 
+>      `sudo swift-ring-builder account.builder add r1z1-10.0.0.21:6002/sdb1 100`  
+>      `sudo swift-ring-builder container.builder add r1z1-10.0.0.21:6001/sdb1 100`  
+>      `sudo swift-ring-builder object.builder add r1z1-10.0.0.21:6000/sdb1 100`  
+
+>      `sudo swift-ring-builder account.builder add r1z1-10.0.0.31:6002/sdb1 100`  
+>      `sudo swift-ring-builder container.builder add r1z1-10.0.0.31:6001/sdb1 100`  
+>      `sudo swift-ring-builder object.builder add r1z1-10.0.0.31:6000/sdb1 100`  
+
+>      `sudo swift-ring-builder account.builder add r1z1-10.0.0.41:6002/sdb1 100`  
+>      `sudo swift-ring-builder container.builder add r1z1-10.0.0.41:6001/sdb1 100`  
+>      `sudo swift-ring-builder object.builder add r1z1-10.0.0.41:6000/sdb1 100`  
+
+> + Rebalance the rings:  
+>      `sudo swift-ring-builder account.builder rebalance`  
+>      `sudo swift-ring-builder container.builder rebalance`  
+>      `sudo swift-ring-builder object.builder rebalance`  
+
+> + Copy the account.ring.gz, container.ring.gz, and object.ring.gz files to each of the Proxy and Storage nodes in /etc/swift.  
+
+> + Make sure the swift user owns all configuration files:  
+>       `sudo chown -R swift:swift /etc/swift`  
+
+> + Restart the Proxy service:  
+>       `sudo service swift-proxy restart`  
+> + To start all swift services at once, run the command:  
+>       `sudo swift-init all start`  
+sudo swift-init all restart
+sudo service rsync restart
+
