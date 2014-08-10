@@ -335,5 +335,8 @@ Installed 0 object(s) from 0 fixture(s)
 >      `sudo chown -R swift:swift /srv/node`  
 > + Create [/etc/rsyncd.conf](rsyncd.conf)  
 > + Edit the following line in [/etc/default/rsync](rsync)  
-
-
+> + Start the rsync service:  
+>      `sudo service rsync start`  
+> + Create the swift recon cache directory and set its permissions:  
+>      `sudo mkdir -p /var/swift/recon`  
+>      `sudo chown -R swift:swift /var/swift/recon`  
