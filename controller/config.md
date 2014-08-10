@@ -356,6 +356,7 @@ Installed 0 object(s) from 0 fixture(s)
 >      `sudo swift-ring-builder container.builder create 18 3 1`  
 >      `sudo swift-ring-builder object.builder create 18 3 1`   
 > + For every storage device on each node add entries to each ring:  
->      `sudo swift-ring-builder account.builder add z1-10.0.0.11:6002R10.0.0.11:6005/sdb1 100`  
->      `swift-ring-builder container.builder add z1-10.0.0.1:6001R10.0.0.11:6004/sdb1 100`  
->      `swift-ring-builder object.builder add z1-10.0.0.1:6000R10.0.1.1:6003/sdb1 100`  
+>      `sudo swift-ring-builder account.builder add r1z1-10.0.0.11:6002/sdb1 100`  
+>      `sudo swift-ring-builder container.builder add r1z1-10.0.0.11:6001/sdb1 100`  
+>      `sudo swift-ring-builder object.builder add r1z1-10.0.0.11:6000/sdb1 100`  
+
