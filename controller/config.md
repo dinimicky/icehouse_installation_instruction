@@ -334,6 +334,6 @@ Installed 0 object(s) from 0 fixture(s)
 >      `sudo mount /srv/node/sdb1`  
 >      `sudo chown -R swift:swift /srv/node`  
 > + Create [/etc/rsyncd.conf](rsyncd.conf)  
->
+> + Edit the following line in [/etc/default/rsync](rsync)  
 
 
