@@ -88,4 +88,9 @@
 > + Create the swift recon cache directory and set its permissions:  
 >      `sudo mkdir -p /var/swift/recon`  
 >      `sudo chown -R swift:swift /var/swift/recon`  
+> + For every storage device on each node add entries to each ring:  
+>      `sudo swift-ring-builder account.builder add r1z1-10.0.0.21:6002/sdb1 100`  
+>      `sudo swift-ring-builder container.builder add r1z1-10.0.0.21:6001/sdb1 100`  
+>      `sudo swift-ring-builder object.builder add r1z1-10.0.0.21:6000/sdb1 100`  
+
 
