@@ -341,3 +341,13 @@ Installed 0 object(s) from 0 fixture(s)
 > + Create the swift recon cache directory and set its permissions:  
 >      `sudo mkdir -p /var/swift/recon`  
 >      `sudo chown -R swift:swift /var/swift/recon`  
+
+### Configure an swift proxy service
+> + Install swift-proxy service:  
+>      `sudo apt-get install swift swift-proxy python-keystoneclient python-swiftclient python-webob`  
+> + Modify memcached to listen on the default interface on a local, non-public network. Edit this line in the /etc/memcached.conf file:  
+>      `-l 10.0.0.11`  
+> + Restart the memcached service:  
+>      `sudo service memcached restart`  
+> + Create [/etc/swift/proxy-server.conf](proxy-server.conf)  
+
