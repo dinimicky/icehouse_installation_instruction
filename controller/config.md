@@ -386,6 +386,5 @@ Installed 0 object(s) from 0 fixture(s)
 >       `sudo service swift-proxy restart`  
 > + To start all swift services at once, run the command:  
 >       `sudo swift-init all start`  
-sudo swift-init all restart
-sudo service rsync restart
+>       `sudo service rsync restart`  
 
