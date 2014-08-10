@@ -350,4 +350,12 @@ Installed 0 object(s) from 0 fixture(s)
 > + Restart the memcached service:  
 >      `sudo service memcached restart`  
 > + Create [/etc/swift/proxy-server.conf](proxy-server.conf)  
-
+> + Create the account, container, and object rings.   
+>      `cd /etc/swift`  
+>      `sudo swift-ring-builder account.builder create 18 3 1`  
+>      `sudo swift-ring-builder container.builder create 18 3 1`  
+>      `sudo swift-ring-builder object.builder create 18 3 1`   
+> + For every storage device on each node add entries to each ring:  
+>      `sudo swift-ring-builder account.builder add z1-10.0.0.11:6002R10.0.0.11:6005/sdb1 100`  
+>      `swift-ring-builder container.builder add z1-10.0.0.1:6001R10.0.0.11:6004/sdb1 100`  
+>      `swift-ring-builder object.builder add z1-10.0.0.1:6000R10.0.1.1:6003/sdb1 100`  
