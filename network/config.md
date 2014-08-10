@@ -64,7 +64,7 @@
 
 > + Create the configuration directory:  
 >      `sudo mkdir -p /etc/swift`  
->      ` sudo chown -R swift:swift /etc/swift`  
+
 > + Create [/etc/swift/swift.conf](swift.conf):  
 >      `[swift-hash]`  
 >      `# random unique string that can never change (DO NOT LOSE)`  
@@ -80,6 +80,7 @@
 >      `sudo mkdir -p /srv/node/sdb1`  
 >      `sudo mount /srv/node/sdb1`  
 >      `sudo chown -R swift:swift /srv/node`  
+>      ` sudo chown -R swift:swift /etc/swift`  
 > + Create [/etc/rsyncd.conf](rsyncd.conf)  
 > + Edit the following line in [/etc/default/rsync](rsync)  
 > + Start the rsync service:  
