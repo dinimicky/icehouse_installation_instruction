@@ -317,6 +317,7 @@ Installed 0 object(s) from 0 fixture(s)
 
 > + Create the configuration directory:  
 >      `sudo mkdir -p /etc/swift`  
+>      ` sudo chown -R swift:swift /etc/swift`  
 > + Create [/etc/swift/swift.conf](swift.conf):  
 >      `[swift-hash]`  
 >      `# random unique string that can never change (DO NOT LOSE)`  
@@ -325,5 +326,14 @@ Installed 0 object(s) from 0 fixture(s)
 
 > + Install storage node packages:  
 >      `sudo apt-get install swift swift-account swift-container swift-object xfsprogs`  
+> + For each device on the node that you want to use for storage, set up the XFS volume (/dev/sdb is used as an example).  
+>      `sudo fdisk /dev/sdb`  
+>      `sudo mkfs.xfs /dev/sdb1`  
+>      `sudo echo "/dev/sdb1 /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab`  
+>      `sudo mkdir -p /srv/node/sdb1`  
+>      `sudo mount /srv/node/sdb1`  
+>      `sudo chown -R swift:swift /srv/node`  
+> + Create [/etc/rsyncd.conf](rsyncd.conf)  
 >
+
 
