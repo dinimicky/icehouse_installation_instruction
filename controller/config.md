@@ -301,10 +301,29 @@ Installed 0 object(s) from 0 fixture(s)
 >      `sudo service cinder-scheduler restart`  
 >      `sudo service cinder-api restart`  
 
-### Configure an Object Storage node  
+### Configure an Object Storage service  
 
 > + Create a swift user that the Object Storage Service can use to authenticate with the Identity Service.  
+>      `keystone user-create --name=swift --pass=openstack --email=swift@example.com`  
+>      `keystone user-role-add --user=swift --tenant=service --role=admin`  
 > + Create a service entry for the Object Storage Service:  
+>      `keystone service-create --name=swift --type=object-store --description="OpenStack Object Storage"`  
 > + Specify an API endpoint for the Object Storage Service by using the returned service ID.  
-> + Create the configuration directory  
-> + Create /etc/swift/swift.conf  
+>      `keystone endpoint-create \`  
+>      `--service-id=$(keystone service-list | awk '/ object-store / {print $2}') \`  
+>      `--publicurl='http://controller:8080/v1/AUTH_%(tenant_id)s' \`  
+>      `--internalurl='http://controller:8080/v1/AUTH_%(tenant_id)s' \`  
+>      `--adminurl=http://controller:8080`  
+
+> + Create the configuration directory:  
+>      `sudo mkdir -p /etc/swift`  
+> + Create /etc/swift/swift.conf:  
+>      `[swift-hash]`  
+>      `# random unique string that can never change (DO NOT LOSE)`  
+>      `swift_hash_path_prefix = xrfuniounenqjnw`  
+>      `swift_hash_path_suffix = fLIbertYgibbitZ`  
+
+> + Install storage node packages:  
+>      `sudo apt-get install swift swift-account swift-container swift-object xfsprogs`  
+>
+
