@@ -97,3 +97,33 @@
 > + Restart the Block Storage services with the new settings:  
 >      `sudo service cinder-volume restart`  
 >      `sudo service tgt restart`  
+
+### Configure the Object storage service  
+
+> + Create the configuration directory:  
+>      `sudo mkdir -p /etc/swift`  
+
+> + Create [/etc/swift/swift.conf](swift.conf):  
+>      `[swift-hash]`  
+>      `# random unique string that can never change (DO NOT LOSE)`  
+>      `swift_hash_path_prefix = xrfuniounenqjnw`  
+>      `swift_hash_path_suffix = fLIbertYgibbitZ`  
+
+> + Install storage node packages:  
+>      `sudo apt-get install swift swift-account swift-container swift-object xfsprogs`  
+> + For each device on the node that you want to use for storage, set up the XFS volume (/dev/sdb is used as an example).  
+>      `sudo fdisk /dev/sdb`  
+>      `sudo mkfs.xfs /dev/sdb1`  
+>      `sudo sh -c 'echo "/dev/sdb1 /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab'`  
+>      `sudo mkdir -p /srv/node/sdb1`  
+>      `sudo mount /srv/node/sdb1`  
+>      `sudo chown -R swift:swift /srv/node`  
+>      ` sudo chown -R swift:swift /etc/swift`  
+> + Create [/etc/rsyncd.conf](rsyncd.conf)  
+> + Edit the following line in [/etc/default/rsync](rsync)  
+> + Start the rsync service:  
+>      `sudo service rsync start`  
+> + Create the swift recon cache directory and set its permissions:  
+>      `sudo mkdir -p /var/swift/recon`  
+>      `sudo chown -R swift:swift /var/swift/recon`  
+
