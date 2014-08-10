@@ -317,7 +317,7 @@ Installed 0 object(s) from 0 fixture(s)
 
 > + Create the configuration directory:  
 >      `sudo mkdir -p /etc/swift`  
-> + Create /etc/swift/swift.conf:  
+> + Create [/etc/swift/swift.conf](swift.conf):  
 >      `[swift-hash]`  
 >      `# random unique string that can never change (DO NOT LOSE)`  
 >      `swift_hash_path_prefix = xrfuniounenqjnw`  
