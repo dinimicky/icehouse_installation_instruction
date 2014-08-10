@@ -329,7 +329,7 @@ Installed 0 object(s) from 0 fixture(s)
 > + For each device on the node that you want to use for storage, set up the XFS volume (/dev/sdb is used as an example).  
 >      `sudo fdisk /dev/sdb`  
 >      `sudo mkfs.xfs /dev/sdb1`  
->      `sudo echo "/dev/sdb1 /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab`  
+>      `sudo sh -c 'echo "/dev/sdb1 /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab'`  
 >      `sudo mkdir -p /srv/node/sdb1`  
 >      `sudo mount /srv/node/sdb1`  
 >      `sudo chown -R swift:swift /srv/node`  
