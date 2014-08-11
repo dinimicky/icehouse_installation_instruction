@@ -35,7 +35,7 @@ icehouse_installation_instruction
 >      + NIC 1(host-only): Management Network
 >      + NIC 2(internal network): instance tunnels
 >      + NIC 3(NAT): internet
->      + NIC 4(bridge network): external network
+>      + NIC 4(bridge network): external network (promisuous: allow all)
 >
 > + compute1, compute2:
 >   + CPU: 2 
