@@ -51,7 +51,7 @@
 >      `...`  
 >      `service_neutron_metadata_proxy = true`  
 >      `neutron_metadata_proxy_shared_secret = METADATA_SECRET`  
-> + Restart the Compute API service:  
+> + Restart the Compute API service on the controller node:  
 >      `sudo service nova-api restart`  
 > + To configure the Modular Layer 2 (ML2) plug-in in [/etc/neutron/plugins/ml2/ml2_conf.ini](ml2_conf.ini)  
 > + To configure the Layer-3 (L3) agent in [/etc/neutron/l3_agent.ini](l3_agent.ini)  
