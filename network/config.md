@@ -49,7 +49,7 @@
 > + On the controller node, add the configuration in /etc/nova/nova.conf   
 >      `[DEFAULT]`  
 >      `...`  
->      `service_neutron_metadata_proxy = true`  
+>      `service_neutron_metadata_proxy = True`  
 >      `neutron_metadata_proxy_shared_secret = METADATA_SECRET`  
 > + Restart the Compute API service on the controller node:  
 >      `sudo service nova-api restart`  
