@@ -10,10 +10,10 @@ icehouse_installation_instruction
 >
 > There are 4 VMs to be created. their roles are shown as below:
 >
-> 1. controller
-> 2. network
-> 3. compute1
-> 4. compute2
+> 1. controller  
+> 2. network  
+> 3. compute1  
+> 4. compute2  
 >
 
 >         +-------------+                       
