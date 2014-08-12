@@ -65,3 +65,9 @@
 >         `--security-group default --key-name demo-key demo-instance1`  
 >     15. `neutron floatingip-create ext-net`  
 >     16. `nova floating-ip-associate demo-instance1 FLOATING_IP`  
+
+> + IPv6 Configuration in controller:  
+>     1. `source demo-openrc.sh`  
+>     2. `neutron subnet-create demo6-net --name demo6-subnet --ip-version 6 --gateway 2001:db8:1:1::1 \`   
+>        `2001:db8:1:1::/64`  
+>     3. 
