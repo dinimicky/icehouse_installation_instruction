@@ -73,7 +73,7 @@
 >     4. `neutron router-create demo6-router` 
 >     5. `neutron router-interface-add demo6-router demo6-subnet`    
 
-> + Create VM instance
+> + Create VM instance  
 >      Image is from [ubuntu-12.04-server-cloudimg-amd64-disk1.img](https://cloud-images.ubuntu.com/releases/12.04.4/release/ubuntu-12.04-server-cloudimg-amd64-disk1.img)
 >     1. `ssh-keygen`  
 >     2. `nova keypair-add --pub-key ~/.ssh/id_rsa.pub demo-key`  
