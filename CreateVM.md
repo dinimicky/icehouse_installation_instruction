@@ -44,7 +44,11 @@
                                           *------------------------------------------------ (external network)
 ```
 
-> + In compute Node:  
->        `sudo iptables -t nat -A neutron-openvswi-PREROUTING \`  
->        `-d 169.254.169.254/32 -p tcp -m tcp --dport 80 -j DNAT --to-destination 10.0.0.11:8775`  
+> + Create the network in controller:  
+>     1. `source admin-openrc.sh`  
+>     2. `neutron net-create ext-net --shared --router:external=True`  
+>     3. `neutron subnet-create ext-net --name ext-subnet \`
+  --allocation-pool start=FLOATING_IP_START,end=FLOATING_IP_END \
+  --disable-dhcp --gateway EXTERNAL_NETWORK_GATEWAY EXTERNAL_NETWORK_CIDR
+
 
