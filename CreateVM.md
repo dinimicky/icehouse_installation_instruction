@@ -89,7 +89,7 @@
 >     10. `nova floating-ip-associate FLOATINGIP_ID2 UB2_DEMO4_PORT_ID`  
 
 > + Configure IPv6 in instance:
->     1. create eth1.cfg in /etc/network/interfaces.d/, the content is shown as below:   
+>     1. create eth1.cfg in /etc/network/interfaces.d/, the content is shown as below, the IPv6 Address should keep align with instance IPv6 Address in openstack:   
 >        `# The primary network interface`
 >        `auto eth1`  
 >        `iface eth1 inet6 static`  
