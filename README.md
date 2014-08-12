@@ -14,8 +14,9 @@ icehouse_installation_instruction
 > 2. network  
 > 3. compute1  
 > 4. compute2  
->
 
+
+>
 >         +-------------+                       
 >         | controller  |
 >         |*************|
