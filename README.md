@@ -16,93 +16,35 @@ icehouse_installation_instruction
 > 4. compute2
 >
 
-
->         +-------------+ 
+>         +-------------+                       
 >         | controller  |
 >         |*************|
 >         |    Mysql    |
 >         |=============|
 >         |  RabbitMQ   |
->         |=============|
+>         |=============|                               
 >         |  Keystone   |
->         |=============|
->         |   Glance    |
->         |=============|
->         | Nova mgmt   |
->         |=============|
->         |   Neutron   |
->         |   Server    |
->         |=============|
->         |   Neutron   |
->         | ML2 Plugin  |
->         |=============|
->         |  Dashboard  |
->         |=============|
->         | Cinder Mgmt |
->         |=============|
->         | Swift Proxy |
->         |=============|
->         |Swift Storage|
->         +-------------+ 
+>         |=============|                              +-------------+       +-------------+
+>         |   Glance    |        +-------------+       |  compute1   |       |  compute2   |
+>         |=============|        |    nework   |       |*************|       |*************|
+>         | Nova mgmt   |        |*************|       |    nova     |       |    nova     |
+>         |=============|        |   Neutron   |       |  hypervisor |       |  hypervisor |
+>         |   Neutron   |        |   L2 Agent  |       |    qemu     |       |    qemu     |
+>         |   Server    |        |    (OVS)    |       |=============|       |=============|
+>         |=============|        |=============|       |   Neutron   |       |   Neutron   |
+>         |   Neutron   |        |   Neutron   |       |   L2 Agent  |       |   L2 Agent  |
+>         | ML2 Plugin  |        |  L3 Agent   |       |    (OVS)    |       |    (OVS)    |
+>         |=============|        |=============|       |=============|       |=============|
+>         |  Dashboard  |        |   Neutron   |       |   Neutron   |       |   Neutron   |
+>         |=============|        | ML2 Plugin  |       | ML2 Plugin  |       | ML2 Plugin  |
+>         | Cinder Mgmt |        |=============|       |=============|       |=============|
+>         |=============|        |   Neutron   |       |    Cinder   |       |    Cinder   |
+>         | Swift Proxy |        |  DHCP Agent |       |    Volume   |       |    Volume   |
+>         |=============|        |=============|       |=============|       |=============|
+>         |Swift Storage|        |Swift Storage|       |Swift Storage|       |Swift Storage|
+>         +-------------+        +-------------+       +-------------+       +-------------+
 >
->         +-------------+ 
->         |    nework   |
->         |*************|
->         |   Neutron   |
->         |   L2 Agent  |
->         |    (OVS)    |
->         |=============|
->         |   Neutron   |
->         |  L3 Agent   |
->         |=============|
->         |   Neutron   |
->         | ML2 Plugin  |
->         |=============|
->         |   Neutron   |
->         |  DHCP Agent |
->         |=============|
->         |Swift Storage|
->         +-------------+ 
->
->         +-------------+ 
->         |  compute1   |
->         |*************|
->         |    nova     |
->         |  hypervisor |
->         |    qemu     |
->         |=============|
->         |   Neutron   |
->         |   L2 Agent  |
->         |    (OVS)    |
->         |=============|
->         |   Neutron   |
->         | ML2 Plugin  |
->         |=============|
->         |    Cinder   |
->         |    Volume   |
->         |=============|
->         |Swift Storage|
->         +-------------+ 
->
->         +-------------+ 
->         |  compute2   |
->         |*************|
->         |    nova     |
->         |  hypervisor |
->         |    qemu     |
->         |=============|
->         |   Neutron   |
->         |   L2 Agent  |
->         |    (OVS)    |
->         |=============|
->         |   Neutron   |
->         | ML2 Plugin  |
->         |=============|
->         |    Cinder   |
->         |    Volume   |
->         |=============|
->         |Swift Storage|
->         +-------------+ 
+       
 
 ### VM Configuration
 
