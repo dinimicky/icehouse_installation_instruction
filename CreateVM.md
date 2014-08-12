@@ -44,7 +44,7 @@
                                           *------------------------------------------------ (external network)
 ```
 
-> + Create the network in controller:  
+> + Configure in controller:  
 >     1. `source admin-openrc.sh`  
 >     2. `neutron net-create ext-net --shared --router:external=True`  
 >     3. `neutron subnet-create ext-net --name ext-subnet \`  
