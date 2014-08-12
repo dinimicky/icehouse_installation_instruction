@@ -16,6 +16,94 @@ icehouse_installation_instruction
 > 4. compute2
 >
 
+
+>         +-------------+ 
+>         | controller  |
+>         |*************|
+>         |    Mysql    |
+>         |=============|
+>         |  RabbitMQ   |
+>         |=============|
+>         |  Keystone   |
+>         |=============|
+>         |   Glance    |
+>         |=============|
+>         | Nova mgmt   |
+>         |=============|
+>         |   Neutron   |
+>         |   Server    |
+>         |=============|
+>         |   Neutron   |
+>         | ML2 Plugin  |
+>         |=============|
+>         |  Dashboard  |
+>         |=============|
+>         | Cinder Mgmt |
+>         |=============|
+>         | Swift Proxy |
+>         |=============|
+>         |Swift Storage|
+>         +-------------+ 
+>
+>         +-------------+ 
+>         |    nework   |
+>         |*************|
+>         |   Neutron   |
+>         |   L2 Agent  |
+>         |    (OVS)    |
+>         |=============|
+>         |   Neutron   |
+>         |  L3 Agent   |
+>         |=============|
+>         |   Neutron   |
+>         | ML2 Plugin  |
+>         |=============|
+>         |   Neutron   |
+>         |  DHCP Agent |
+>         |=============|
+>         |Swift Storage|
+>         +-------------+ 
+>
+>         +-------------+ 
+>         |  compute1   |
+>         |*************|
+>         |    nova     |
+>         |  hypervisor |
+>         |    qemu     |
+>         |=============|
+>         |   Neutron   |
+>         |   L2 Agent  |
+>         |    (OVS)    |
+>         |=============|
+>         |   Neutron   |
+>         | ML2 Plugin  |
+>         |=============|
+>         |    Cinder   |
+>         |    Volume   |
+>         |=============|
+>         |Swift Storage|
+>         +-------------+ 
+>
+>         +-------------+ 
+>         |  compute2   |
+>         |*************|
+>         |    nova     |
+>         |  hypervisor |
+>         |    qemu     |
+>         |=============|
+>         |   Neutron   |
+>         |   L2 Agent  |
+>         |    (OVS)    |
+>         |=============|
+>         |   Neutron   |
+>         | ML2 Plugin  |
+>         |=============|
+>         |    Cinder   |
+>         |    Volume   |
+>         |=============|
+>         |Swift Storage|
+>         +-------------+ 
+
 ### VM Configuration
 
 > 
