@@ -74,7 +74,7 @@
 >     5. `neutron router-interface-add demo6-router demo6-subnet`    
 
 > + Create VM instance  
-> Note: in the Icehouse, the dhcpv6 hasn't been supported. And the metadata service only support on the IPv4. So we must define a IPv4 for metadata service. we have to configure the IPv6 Address manually.
+> Note: in the Icehouse, the dhcpv6 hasn't been supported. And the metadata service only support on the IPv4. So we must define a IPv4 for metadata service. we have to configure the IPv6 Address manually.  
 >      Image is from [ubuntu-12.04-server-cloudimg-amd64-disk1.img](https://cloud-images.ubuntu.com/releases/12.04.4/release/ubuntu-12.04-server-cloudimg-amd64-disk1.img)
 >     1. `ssh-keygen`  
 >     2. `nova keypair-add --pub-key ~/.ssh/id_rsa.pub demo-key`  
